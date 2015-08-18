@@ -11,3 +11,11 @@
 
 
 } )( this );
+
+$(document).ready(function() {
+//var woffEnabled = true;
+//to place your webfonts in a custom directory
+//uncomment this and set it to where your webfonts are.
+var customPath = "/assets/fonts";
+
+});

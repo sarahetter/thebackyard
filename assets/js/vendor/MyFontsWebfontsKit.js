@@ -1,19 +1,23 @@
-/*! Backyard2015 - v0.0.1
- * http://wordpress.org/themes
- * Copyright (c) 2015; * Licensed GPLv2+ */
-( function( window, undefined ) {
-	'use strict';
+/*
+
+ MyFonts Webfont Build ID 3077082, 2015-08-17T21:50:54-0400
+
+ The fonts listed in this notice are subject to the End User License
+ Agreement(s) entered into by the website owner. All other parties are 
+ explicitly restricted from using the Licensed Webfonts(s).
+
+ You may obtain a valid license at the URLs below.
+
+ Webfont: GrotesqueMTStd by Monotype 
+ URL: http://www.myfonts.com/fonts/mti/grotesque-mt/std-roman/
+ Copyright: Copyright 1992, 2002 Adobe Systems Incorporated. All Rights Reserved. Copyright 1992, 2002 The Monotype Corporation. All rights reserved.
+ Licensed pageviews: 250,000
 
 
-} )( this );
+ License: http://www.myfonts.com/viewlicense?type=web&buildid=3077082
 
-$(document).ready(function() {
-//var woffEnabled = true;
-//to place your webfonts in a custom directory
-//uncomment this and set it to where your webfonts are.
-var customPath = "/assets/fonts";
-
-});
+ ? 2015 MyFonts Inc
+*/
 var protocol=document.location.protocol;"https:"!=protocol&&(protocol="http:");var count=document.createElement("script");count.type="text/javascript";count.async=!0;count.src=protocol+"//hello.myfonts.net/count/2ef3da";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(count,s);var browserName,browserVersion,webfontType;if("undefined"==typeof woffEnabled)var woffEnabled=!0;var svgEnabled=0,woff2Enabled=1;
 if("undefined"!=typeof customPath)var path=customPath;else{var scripts=document.getElementsByTagName("SCRIPT"),script=scripts[scripts.length-1].src;script.match("://")||"/"==script.charAt(0)||(script="./"+script);path=script.replace(/\\/g,"/").replace(/\/[^\/]*\/?$/,"")}
 var wfpath=path+"/webfonts/",browsers=[{regex:"MSIE (\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:9,type:"woff"},{version:5,type:"eot"}]},{regex:"Trident/(\\d+\\.\\d+); (.+)?rv:(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$3)",type:[{version:11,type:"woff"}]},{regex:"Firefox[/s](\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:3.6,type:"woff"},{version:3.5,type:"ttf"}]},{regex:"Chrome/(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:36,type:"woff2"},

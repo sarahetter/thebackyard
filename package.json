@@ -31,5 +31,8 @@
     "load-grunt-tasks": "^3.2.0",
     "qunitjs": "~1.18.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  }
 }
