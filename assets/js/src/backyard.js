@@ -13,9 +13,27 @@
 } )( this );
 
 $(document).ready(function() {
-//var woffEnabled = true;
-//to place your webfonts in a custom directory
-//uncomment this and set it to where your webfonts are.
-var customPath = "/assets/fonts";
+
+    var subtemplate = $('.subtemplate');
+
+    if (subtemplate.length <= 1) {
+        $('.icon-chevron-thin-right').hide();
+    }
+
+    subtemplate.first().addClass('active');
+
+    $('.icon-chevron-thin-right').click(function(){
+
+        $('.subtemplate:first-child').fadeOut()
+            .next('.subtemplate').fadeIn()
+            .end().appendTo('.subtemplate-container');
+    });
+
+    $('.icon-next').click(function(){
+        $('.slide:first-child').fadeOut()
+            .next('.slide').fadeIn()
+            .end().appendTo('.gallery');
+    });
+
 
 });

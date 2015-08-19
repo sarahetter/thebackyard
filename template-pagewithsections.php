@@ -8,7 +8,6 @@ get_header();
 ?>
 <main>
 	<div class="centered">
-	<i class="icon-chevron-thin-left"></i>
 		<?php
 		echo $controller->pageWithSections();
 		?>

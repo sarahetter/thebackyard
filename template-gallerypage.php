@@ -5,14 +5,11 @@ Template Name: Gallery Page
 $controller = new Controller();
 get_header();
 ?>
-<main>
+<main class="gallery">
 	<?php
 	echo $controller->galleryPage();
 	?>
-	<div class="centered">
-		<i class="icon-chevron-thin-left"></i>
-
-		<i class="icon-chevron-thin-right"></i>
-	</div>
 </main>
+	<i class="icon-next"></i>
+
 <?php get_footer(); ?>

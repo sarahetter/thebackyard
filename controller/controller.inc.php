@@ -9,7 +9,7 @@
 class Controller {
 
 	public function pageWithSections() {
-		$result = '';
+		$result = '<section class="subtemplate-container">';
 
 		global $post;
 		$id         = $post->ID;
@@ -32,43 +32,48 @@ class Controller {
 				}
 				$emailMarkup = '';
 				if ($email) {
-					$emailMarkup = "<li><a href='mailto:{$email}' class='email'></a></li>";
+					$imageUrl = BACKYARD_TEMPLATE_URL. "/images/social/mail-sm.png";
+					$emailMarkup = "<li><a href='mailto:{$email}' class='email'><img src='{$imageUrl}' alt='Mail'></a></li>";
 				}
 				$facebookMarkup = '';
 				if ($facebook) {
-					$facebookMarkup = "<li><a href='{$facebook}' class='facebook' target='_blank'></a></li>";
+					$imageUrl = BACKYARD_TEMPLATE_URL. "/images/social/facebook-sm.png";
+					$facebookMarkup = "<li><a href='{$facebook}' class='facebook' target='_blank'><img src='{$imageUrl}' alt='Mail'></a></li>";
 				}
 				$twitterMarkup = '';
 				if ($twitter) {
-					$twitterMarkup = "<li><a href='{$twitter}' class='twitter' target='_blank'></a></li>";
+					$imageUrl = BACKYARD_TEMPLATE_URL. "/images/social/twitter-sm.png";
+					$twitterMarkup = "<li><a href='{$twitter}' class='twitter' target='_blank'><img src='{$imageUrl}' alt='Mail'></a></li>";
 				}
 				$instagramMarkup = '';
 				if ($instagram) {
-					$instagramMarkup = "<li><a href='{$instagram}' class='instagram' target='_blank'></a></li>";
+					$imageUrl = BACKYARD_TEMPLATE_URL. "/images/social/insta-sm.png";
+					$instagramMarkup = "<li><a href='{$instagram}' class='instagram' target='_blank'><img src='{$imageUrl}' alt='Mail'></a></li>";
 				}
 				$logoMarkup = '';
 				if ($logo) {
-					$logoMarkup = "<img src='{$logo["url"]}' alt='{$logo["alt"]}'>";
+					$logoMarkup = "<img src='{$logo["url"]}' alt='{$logo["alt"]}' class='other-logo'>";
 				}
 
 				$result .= "
-					{$imageMarkup}
-					<div class='side-content'>
-						{$logoMarkup}
-						{$rightContent}
-						<ul class='contact-points'>
-						{$emailMarkup}
-						{$facebookMarkup}
-						{$twitterMarkup}
-						{$instagramMarkup}
-						</ul>
+					<div class='subtemplate'>
+						{$imageMarkup}
+						<div class='side-content'>
+							{$logoMarkup}
+							{$rightContent}
+							<ul class='contact-points'>
+							{$emailMarkup}
+							{$facebookMarkup}
+							{$twitterMarkup}
+							{$instagramMarkup}
+							</ul>
+						</div>
 					</div>
 				";
 			}
 		}
 
-
-
+		$result .= "</section>";
 		return $result;
 	}
 

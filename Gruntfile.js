@@ -14,8 +14,7 @@ module.exports = function( grunt ) {
 			},
 			main: {
 				src: [
-					'assets/js/src/backyard.js',
-                    'assets/js/vendor/MyFontsWebfontsKit.js'
+					'assets/js/src/backyard.js'
 				],
 				dest: 'assets/js/backyard.js'
 			}
