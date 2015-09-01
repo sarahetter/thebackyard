@@ -1,4 +1,4 @@
-node_modules
+2015/node_modules/grunt-sass/node_modules/node-sass/node_modules/mkdirp/node_modules
 release
 composer.lock
 phpunit.xml

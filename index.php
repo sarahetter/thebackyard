@@ -1,18 +1,17 @@
 <?php
 /**
- * The main template file
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
  *
- * @package Backyard2015
- * @since 0.1.0
+ * @package WordPress
  */
 
-get_header(); ?>
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-	<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ): the_post(); ?>
-			<h2><?php the_title(); ?></h2>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
-	<?php endif; ?>
-
-<?php get_footer();
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/2015/wp-blog-header.php' );
