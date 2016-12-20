@@ -32,6 +32,6 @@ $backgroundImage = get_field('background_image')['url'];
 		<ul class="contact">
 			<li><a href="mailto:thebackyardregina@gmail.com" class="mail"><img src="<?php echo BACKYARD_TEMPLATE_URL; ?>/images/social/mail-lg.png" alt="Mail"></a></li>
 			<li><a href="https://www.facebook.com/thebackyardregina" class="facebook" target="_blank"><img src="<?php echo BACKYARD_TEMPLATE_URL; ?>/images/social/facebook-lg.png" alt="Facebook"></a></li>
-			<li><a href="https://instagram.com/thebackyard_/" class="instagram" target="_blank"><img src="<?php echo BACKYARD_TEMPLATE_URL; ?>/images/social/insta-lg.png" alt="Instagram"></a></li>
+			<li><a href="https://instagram.com/thebackyardyqr/" class="instagram" target="_blank"><img src="<?php echo BACKYARD_TEMPLATE_URL; ?>/images/social/insta-lg.png" alt="Instagram"></a></li>
 		</ul>
 	</header>
