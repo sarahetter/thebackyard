@@ -12,17 +12,15 @@ get_header();
 ?>
     <main class="index">
         <div class="centered">
-            <h1>Blog</h1>
 	        <?php if ( have_posts() ) : ?>
 		        <?php while ( have_posts() ): the_post(); ?>
                     <article>
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <h1><?php the_title(); ?></h1>
                         <time><?php the_time( get_option( 'date_format' ) ); ?></time>
-			        <?php the_excerpt(); ?>
+                        <?php the_content(); ?>
                     </article>
 		        <?php endwhile; ?>
 	        <?php endif; ?>
-	        <?php echo paginate_links(  ); ?>
         </div>
     </main>
 <?php get_footer(); ?>

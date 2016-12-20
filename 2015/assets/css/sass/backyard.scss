@@ -283,3 +283,16 @@ header {
     display: inline-block;
   }
 }
+
+article {
+  margin-bottom: 50px;
+  h2 {
+    margin-bottom:0;
+    a {
+      font-style: normal;
+    }
+  }
+  time {
+    font-size: 10px;
+  }
+}

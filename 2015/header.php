@@ -6,7 +6,7 @@
  * @since 0.1.0
  */
 
-$backgroundImage = get_field('background_image')['url'];
+$backgroundImage = get_field('background_image',4)['url'];
  ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

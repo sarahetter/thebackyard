@@ -82,3 +82,14 @@ add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 //ACF Collapser temp fix
 add_filter('acf/compatibility/field_wrapper_class', '__return_true');
+
+/**
+ * Filter the excerpt "read more" string.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+	return '... <a href="'.get_permalink().'">Read More</a>';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

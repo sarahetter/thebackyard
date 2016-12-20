@@ -243,7 +243,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -321,7 +322,7 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.62em 0.75em; }
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -364,8 +365,7 @@ th {
     background: transparent !important;
     color: #000 !important;
     text-shadow: none !important;
-    -webkit-filter: none !important;
-            filter: none !important;
+    filter: none !important;
     -ms-filter: none !important; }
   a, a:visited {
     color: #444 !important;
@@ -680,3 +680,12 @@ header {
   list-style: none; }
   .contact-points li {
     display: inline-block; }
+
+article {
+  margin-bottom: 50px; }
+  article h2 {
+    margin-bottom: 0; }
+    article h2 a {
+      font-style: normal; }
+  article time {
+    font-size: 10px; }
